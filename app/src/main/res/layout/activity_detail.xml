@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#FBFBFB"
+    android:padding="4dp"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/_imageTitle"
+            android:layout_width="283dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_shape_title"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="textview"
+            android:textColor="#393737"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/_imageDesc"
+            app:layout_constraintTop_toBottomOf="@+id/_imageDetail" />
+
+        <ImageView
+            android:id="@+id/_imageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:adjustViewBounds="false"
+            android:background="#857575"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/img1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="610dp"
+            android:background="@drawable/my_shape_detail"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/_imageDesc"
+                android:layout_width="351dp"
+                android:layout_height="219dp"
+                android:layout_gravity="center|left"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/my_shape_detail"
+                android:backgroundTint="#FFFAFA"
+                android:gravity="clip_horizontal|center|clip_vertical|fill|top|end"
+                android:text="textview"
+                android:textColor="#1B1A1A"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/_imageTitle" />
+
+            <Button
+
+                android:id="@+id/btn_pesan"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#E66941"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="PESAN SEKARANG !"
+                android:textColor="#F1F1F1" />
+
+            <Button
+
+                android:id="@+id/button2"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#91B15A"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="hubungi perusahaan"
+                android:textColor="#F1F1F1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

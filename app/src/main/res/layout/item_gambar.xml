@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="#00FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:background="@drawable/my_shape_cardview">
+
+        <ImageView
+            android:id="@+id/_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/my_shape_item"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/_title"
+            android:layout_width="243dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/_image"
+            android:layout_alignTop="@+id/_image"
+            android:layout_alignEnd="@+id/_image"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/my_shape_item"
+            android:backgroundTint="#92F3F3F3"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FFA726"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
